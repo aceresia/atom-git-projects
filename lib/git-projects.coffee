@@ -79,6 +79,7 @@ module.exports =
   openProject: (project) ->
     atom.open options =
       pathsToOpen: [project.path]
+      newWindow: true
       devMode: atom.config.get('git-projects.openInDevMode')
 
   # Adds a project to the list of root paths.
